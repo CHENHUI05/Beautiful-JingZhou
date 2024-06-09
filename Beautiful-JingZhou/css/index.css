@@ -1,0 +1,341 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.w {
+	width: 1200px;
+	margin: auto;
+}
+
+body {
+	background-color: #f3f5f7;
+}
+
+.top {
+	width: auto;
+	height: 42px;
+	background-color: greenyellow;
+}
+
+.topnav {
+	height: 42px;
+	width: 200px;
+	float: right;
+	background-color: orange;
+}
+
+.topnav ul li a {
+	display: block;
+	float: left;
+	color: blue;
+	margin-left: 15px;
+	margin-right: 20px;
+	margin-top: 9px;
+}
+/*消除无序列表前面的小圆点修饰*/
+li {
+	list-style: none;
+}
+/*消除超链接标签下的下划线修饰*/
+a {
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.header {
+	height: 42px;
+	/* background-color: pink; */
+	/* 注意此地方会层叠 w 里面的margin */
+	margin: 30px auto;
+}
+
+.logo {
+	float: left;
+	width: 198;
+	height: 42;
+}
+
+.nav {
+	float: left;
+	margin-left: 0px;
+}
+
+.nav ul li {
+	float: left;
+	margin: 0 8px;
+}
+
+.nav ul li a {
+	display: block;
+	height: 42px;
+	padding: 0 10px;
+	line-height: 42px;
+	font-size: 18px;
+	color: #050505;
+}
+
+.nav ul li a:hover {
+	border-bottom: 2px solid #00a4ff;
+	color: #00a4ff;
+}
+
+.wechat {
+	position: relative;
+	display: inline-block;
+}
+/* .code {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+} */
+/* .wechat:hover .code {
+	display: block;
+} */
+
+.myself {
+	position: relative;
+	display: inline-block;
+}
+
+.choice1 {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+}
+/* .myself:hover .choice1 {
+	display: block;
+} */
+
+.courses {
+	position: relative;
+	display: inline-block;
+}
+/* .choice2 {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+} */
+/* .courses:hover .choice2 {
+	display: block;
+} */
+/* search搜索模块 */
+
+.search {
+	float: left;
+	width: 412px;
+	height: 42px;
+	margin-left: 30px;
+}
+
+.search input {
+	float: left;
+	width: 345px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	border-right: 0;
+	color: #bfbfbf;
+	font-size: 14px;
+	padding-left: 15px;
+}
+
+.search button {
+	float: left;
+	width: 50px;
+	height: 42px;
+	/* 按钮button默认有个边框需要我们手动去掉 */
+	border: 0;
+	background: url(btn.png);
+}
+
+.banenr {
+	height: 10px;
+	width: auto;
+	background-color: #eb4537;
+}
+.banner-bg {
+	margin: auto;
+	width: 1024px;
+	height: 10px;
+	padding-left: 0px;
+}
+#footer {
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+	padding-top: 10px;
+	color: #FFF;
+	background-color: #333;
+}
+p{
+	font-family: "楷体";
+	font-size: 20px;
+	text-indent: 2em;
+	padding-top: 5px;
+	line-height:25px;
+}
+h3{
+	font-family: "楷体";
+}
+img{
+	border-radius:18px;
+	-webkit-border-radius:18px;
+	-moz-border-radius:18px;
+}
+
+.container1 {
+    display: flex;
+    text-align: left;
+  }
+/* 设置视频容器 */
+. video-container1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white; /* 视频容器的背景颜色 */
+}
+  /* 设置视频宽度 */
+  .video-container1 video {
+	  width: 100%;
+	max-width: 1080px; /* 最大宽度，可根据需要调整 */
+	height: 1920;
+  }
+  /* 设置图片宽度 */
+  .image-container1 img {
+    width: 100%; /* 根据需要调整图片宽度 */
+    height: 100; /* 保持图片的宽高比 */
+	  border-radius: 0;
+  }
+#parent{
+	position:absolute;
+}
+
+
+/*
+照片和文字显示
+*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 900; /* 根据需要调整图片宽度 */
+    height: 500; /* 保持图片的宽高比 */
+}
+
+.container p {
+    width: 40%; /* 根据需要调整文字宽度 */
+    text-align: justify;
+	font-family:"黑体" /*更改字体*/
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history img {
+    width: 450; /* 根据需要调整图片宽度 */
+    height: 260; /* 保持图片的宽高比 */
+}
+
+.history p {
+    width: 750; /* 根据需要调整文字宽度 */
+    text-align: justify;
+	font-family:"华文隶书" /*更改字体*/
+}
+/* 响应式设计：当屏幕宽度较小时，调整布局 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container img, .container p {
+        width: 100%;
+    }
+	.history {
+        flex-direction: column;
+    }
+    .history img, .history p {
+        width: 100%;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
